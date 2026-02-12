@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    top: 0;
+}
+
+@media only screen and(max-width: 767px){
+    
+}
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: palevioletred;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir/Vazir-Bold.woff2') format('woff2'),
+        url('Vazir/Vazir-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir/Vazir-Bold.woff2') format('woff2'),
+        url('Vazir/') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazir/Vazir.woff2') format('woff2'),
+        url('Vazir/Vazir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.div1 {
+    /* font-family: 'Vazir'; */
+    position: sticky;
+    top: 0;
+    height: 10rem;
+    width: 100%;
+    background-color: rgb(161, 179, 82);
+}
+
+.div3 {
+    position: relative;
+    top: 6vh;
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(196, 195, 195);
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div3-1 {
+    position: relative;
+    /* top: 7vh; */
+    border: 2px solid palevioletred;
+    border-radius: 1vh;
+    /* margin: 0.5vh; */
+    background-color: rgb(163, 163, 163);
+    height: 80vh;
+    width: 70%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.img3-1 {}
+
+.div33 {
+    height: 27.5vh;
+    width: 100%;
+    /* border: 0.3vh solid rgb(255, 0, 43); */
+    /* background-color: aqua; */
+    border-radius: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search{
+    margin: 0;
+    padding: 0;
+    inset: 0;
+    /* display: block; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search2{
+    position: relative;
+    top: 5.5rem;
+    right: 25rem;
+}
+.search3{
+    padding: 0.8vh;
+    all: unset;
+    height: 2rem;
+    width: 13rem;
+    border: 0.3vh solid transparent;
+    border-radius: 1vh;
+    box-shadow: 1px 2px 1px 2px rgba(0,0,0,0.3);
+    transition: border .7s ease-in-out;
+}
+.search3:focus{
+    border-color: rgb(223, 158, 180);
+    /* transition: .8s; */
+}
+/* .over {
+    position: absolute;
+    top: 0vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+} */
+
+.div3-1:hover .img3-1 {
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+.div3-2 {
+    margin: 1vh;
+    position: relative;
+    /* top: -9vh; */
+    border: 0.3vh solid pink;
+    border-radius: 1vh;
+    height: 28vh;
+    width: 20%;
+
+}
+
+.div3-3 {
+    height: 2.5vh;
+    width: 22%;
+    border: 0.3vh solid pink;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div3-3 a {
+    color: aliceblue;
+    font-family: 'Vazir';
+    text-decoration: none;
+    font-size: 2vh;
+    /* z-index: 999; */
+}
+
+.div3-3:hover {
+    color: black;
+    background-color: rgb(105, 185, 255);
+    transition: background-color 2s;
+    cursor: pointer;
+}
+
+.div3-4 {
+    height: 14vh;
+    width: 75%;
+    /* border: 0.3vh solid pink; */
+    position: relative;
+    overflow: hidden;
+    /* top: -0.5vh; */
+    /* left: 3vh; */
+}
+
+.img3-1 {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode:darken;
+}
+
+.div3-5 {
+    direction: rtl;
+    position: relative;
+    /* top: -1vh; */
+    height: 4vh;
+    width: 100%;
+    overflow: scroll;
+    /* border: 0.3vh solid pink; */
+}
+
+.div3-5 p {
+    color: white;
+    font-family: 'Vazir';
+    font-size: 2vh;
+    height: 2vh;
+    /* width: 20%; */
+    margin: 0;
+    /* inset: 0; */
+}
+
+.div3-6 {
+    height: 6vh;
+    width: 100%;
+    /* border: 0.3vh solid rgb(0, 0, 0); */
+    position: relative;
+    top: -0.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.div3-6 del {
+    color: rgb(252, 0, 0);
+    margin: 0;
+    inset: 0;
+    font-family: 'Vazir';
+    font-size: 1vh;
+}
+
+.div6-1 {
+    height: 6vh;
+    width: 100%;
+    /* border: 0.3vh solid white; */
+    /* background-color: sandybrown; */
+    position: relative;
+    top: 1.5vh;
+    overflow: hidden;
+}
+
+.div6-1 p {
+    color: rgb(93, 255, 57);
+    margin: 0;
+    inset: 0;
+    font-family: 'Vazir';
+    font-size: 2vh;
+}
+
+.div01 {
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction:row-reverse; */
+    justify-content: center;
+    height: 4vh;
+    width: 30%;
+    position: relative;
+    top: 5vh;
+    left: 130vh;
+}
+
+.box1 {
+    font-family: 'font';
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    width: 10vh;
+    font-family: 'Vazir';
+    /* border: 0.2vh solid pink; */
+}
+
+.more1 {
+    font-family: 'Vazir';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    position: relative;
+    top: 0.5vh;
+    cursor: pointer;
+}
+
+.box01 {
+    /* font-family: 'Vazir'; */
+    margin-top: 1vh;
+    width: 8vh;
+    border: 0.3vh solid rgb(0, 0, 0);
+    border-radius: 0.5vh;
+    background-color: azure;
+    overflow-y: scroll;
+    font-size: 1.5vh;
+}
+
+.more2 {
+    /* font-family: 'Vazir'; */
+    font-size: 2vh;
+    position: relative;
+    top: 1vh;
+}
+
+
+/* a {
+    margin: 0.8vh;
+    display: flex;
+    text-decoration: none;
+}
+
+a:hover {
+    border: 0.1vh solid rgb(0, 0, 0);
+    border-radius: 1vh;
+    background-color: rgb(220, 139, 166);
+    transition: background-color 2s, border-radius 2s;
+} */
+
+p {
+    text-align: center;
+    padding: 0;
+    inset: 0;
+}
+
+.box011:hover {
+    border: 0.2vh solid rgb(0, 0, 0);
+    border-radius: 1vh;
+    /* border-radius: 1vh; */
+    transition: background-color 2s, border-radius 2s;
+    cursor: context-menu;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.p50 {
+    position: relative;
+    top: 0.5vh;
+    /* left: -1vh; */
+    /* height: 3vh; */
+    width: 90%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0vh;
+    font-size: 2vh;
+    font-family: 'Vazir';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p50:hover {
+    color: white;
+    background-color: blue;
+    transition: background-color 2s;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.e-1>*:not(summary){
+    display:none;
+}
+.e-1:hover>*:not(summary){
+    display: block;
+}
+::selection{
+    background-color: palevioletred;
+}

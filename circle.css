@@ -1,0 +1,21 @@
+*
+{
+box-sizing: border-box;
+}
+.pol
+{
+    width: 25%;
+    height: 20%;
+    background-color:transparent ;
+    float: left;
+}
+.lop
+{
+    margin: 5px;
+    padding: 10px;
+    width: 60%;
+    height: 200px;
+    background-color: aqua;
+    border: 30px solid darkgoldenrod;
+    border-radius: 9px;
+}

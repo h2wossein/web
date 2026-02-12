@@ -1,0 +1,21 @@
+body
+{
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0;  
+}
+.kkk
+{
+    border: 2px solid rgb(200, 37, 37);
+    border-radius: 10px;
+}
+.kk
+{
+    min-width: 350px;
+    height: 350px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
